@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cat <<-YAML
+---
+default_process_types:
+  web: MONGO_URL=$MONGO_URL ROOT_URL=$ROOT_URL vendor/node/bin/node deploy/bundle/main.js
+YAML
